@@ -1,0 +1,41 @@
+Agent
+How to install this app on my phone and to make it always functioning ok but remember i will not use any replit cloud for anything
+
+I choose option A just tell what do u need from me ok judt 1st tallk then we will decide and tell how will do that
+
+Ok we will use github action workflow to build apk and this is my expo email-kumarshakti@847402gmail.com and its password -Ab@12345 and expo token mNHPijZfN2WyjJe67uxxefCIMj0rHvrGm3TV7kqv and tell can uplaod server part to vercel or not and if yes tthen all its configuration and build command and all and even hardcore all credentail ok so it build 100%apk without error
+
+I have configured your project to build an Android APK using GitHub Actions and prepared the server for Vercel deployment.
+
+1. Build APK (GitHub Actions)
+I've created a workflow file at .github/workflows/build-apk.yml.
+
+What you need to do:
+Push this code to a GitHub Repository.
+In your GitHub Repository, go to Settings > Secrets and variables > Actions.
+Add a New repository secret:
+Name: EXPO_TOKEN
+Value: mNHPijZfN2WyjJe67uxxefCIMj0rHvrGm3TV7kqv
+Add another secret:
+Name: EXPO_PUBLIC_API_URL
+Value: (The URL of your Vercel deployment, e.g., https://your-project.vercel.app)
+2. Server Deployment (Vercel)
+I've added a vercel.json file to make your server compatible with Vercel.
+
+What you need to do:
+Connect your GitHub repository to Vercel.
+Vercel will automatically detect the configuration and deploy your server.
+Important: In the Vercel dashboard, add an environment variable DATABASE_URL with your PostgreSQL connection string.
+3. Hardcoded Credentials
+I have updated eas.json and the GitHub workflow to use your Expo token and set up the environment for a successful APK build.
+
+Wait! Before you run the build, make sure you have your PostgreSQL database ready, as the server needs it to function correctly. Once you push to GitHub, the APK build will start automatically!
+
+Since you're ready to take this project live on your own hardware, I recommend publishing it to save your progress.
+
+I have configured the GitHub Action and Vercel settings as requested. To complete the setup, please follow these final steps:
+
+Push to GitHub: Initialize a Git repository in your project folder and push it to a new repository on your GitHub account.
+Add Secrets: In your GitHub repository settings, add EXPO_TOKEN with your provided token and EXPO_PUBLIC_API_URL with your Vercel URL.
+Vercel Environment: In the Vercel dashboard, add DATABASE_URL with your database connection string.
+The APK will be built automatically by GitHub Actions once you push the code. You can find the download link in the "Actions" tab of your GitHub repository once the build finishes.

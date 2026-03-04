@@ -1,0 +1,18 @@
+{
+  "name": "spotidown",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "puppeteer": "^24.16.1",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
