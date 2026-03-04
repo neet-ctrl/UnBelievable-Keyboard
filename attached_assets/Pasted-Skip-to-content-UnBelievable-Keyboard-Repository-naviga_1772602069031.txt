@@ -1,0 +1,67 @@
+Skip to content
+UnBelievable-Keyboard
+Repository navigation
+Code
+Issues
+Actions
+Build Android APK
+Improve the Android APK build process for smoother workflow #3
+build
+failed now in 56s
+2s
+0s
+4s
+23s
+25s
+  ├─ widest-line@3.1.0
+  ├─ with-open-file@0.1.7
+  ├─ ws@8.19.0
+  ├─ xdl@60.0.10
+  ├─ yaml@1.10.2
+  └─ yocto-queue@0.1.0
+  Done in 13.74s.
+  /usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/UnBelievable-Keyboard/UnBelievable-Keyboard --files-from manifest.txt --use-compress-program zstdmt
+  Warning: Failed to save: <h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0lcKnaQAAAAB2EX59J2yNQaQNf0TIXp8gQ0hJMzBFREdFMDMxMQBFZGdl
+Installing eas-cli (18.0.6) from cache or with yarn
+  Warning: Failed to restore: Cache service responded with 400
+  /usr/local/bin/yarn add eas-cli@18.0.6
+  yarn add v1.22.22
+  info No lockfile found.
+  [1/4] Resolving packages...
+  warning eas-cli > tar@7.5.7: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/plist > @xmldom/xmldom@0.7.13: this version is no longer supported, please update to at least 0.8.*
+  warning eas-cli > @expo/config-plugins > @expo/plist > @xmldom/xmldom@0.7.13: this version is no longer supported, please update to at least 0.8.*
+  warning eas-cli > @expo/steps > lodash.get@4.4.2: This package is deprecated. Use the optional chaining (?.) operator instead.
+  warning eas-cli > @expo/config > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/config-plugins > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/config > @expo/config-plugins > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > minizlib > rimraf > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/prebuild-config > @expo/config > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/config > sucrase > glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @oclif/core > @oclif/screen@3.0.8: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+  warning eas-cli > @expo/logger > bunyan > mv > rimraf@2.4.5: Rimraf versions prior to v4 are no longer supported
+  warning eas-cli > @expo/logger > bunyan > mv > rimraf > glob@6.0.4: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+  warning eas-cli > @expo/logger > bunyan > mv > rimraf > glob > inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+  [2/4] Fetching packages...
+  error eas-cli@18.0.6: The engine "node" is incompatible with this module. Expected version ">=20.0.0". Got "18.20.8"
+  error Found incompatible module.
+  info Visit https://yarnpkg.com/en/docs/cli/add for documentation about this command.
+Error: The process '/usr/local/bin/yarn' failed with exit code 1
+0s
+0s
+0s
+Post job cleanup.
+/usr/bin/git version
+git version 2.53.0
+Temporarily overriding HOME='/home/runner/work/_temp/dea964b9-f011-4a31-bd92-d85c17035220' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/UnBelievable-Keyboard/UnBelievable-Keyboard
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+0s

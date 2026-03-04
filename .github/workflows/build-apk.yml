@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
@@ -30,4 +30,4 @@ jobs:
       - name: Build APK
         run: |
           mkdir -p build
-          eas build --platform android --profile preview --non-interactive --local --output ./build/app.apk
+          npx eas-cli build --platform android --profile preview --non-interactive --local --output ./build/app.apk

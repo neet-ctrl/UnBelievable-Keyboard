@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SpotiDown",
-    "slug": "spotidown",
+    "slug": "UnBelievable-Keyboard",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -18,7 +18,7 @@
       "bundleIdentifier": "com.kumarshakti.spotidown"
     },
     "android": {
-      "package": "com.kumarshakti.spotidown",
+      "package": "com.kumarshakti.unbelievablekeyboard",
       "extra": {
         "eas": {
           "projectId": "14f6864d-5645-424a-9e7c-88096c148881"
