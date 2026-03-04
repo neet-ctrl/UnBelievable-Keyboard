@@ -1,33 +1,33 @@
-name: Build APK
+name: Build Android APK
 on:
+  workflow_dispatch:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build:
-    name: Install and Build
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 18
           cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Setup Expo
         uses: expo/expo-github-action@v8
         with:
           expo-version: latest
-          eas-cache: true
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build APK (Preview)
-        run: npx eas-build --platform android --profile preview --non-interactive
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-          EXPO_PUBLIC_API_URL: ${{ secrets.EXPO_PUBLIC_API_URL }}
+      - name: Build APK
+        run: |
+          mkdir -p build
+          eas build --platform android --profile preview --non-interactive --local --output ./build/app.apk
