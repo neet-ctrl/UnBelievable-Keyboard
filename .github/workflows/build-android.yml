@@ -38,7 +38,9 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build Android APK (preview)
-        run: eas build --platform android --profile ${{ github.event.inputs.profile || 'preview' }} --non-interactive --local --output ./build/spotidown.apk
+        run: |
+          mkdir -p build
+          eas build --platform android --profile preview --non-interactive --local --output ./build/spotidown.apk
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}

@@ -1,0 +1,103 @@
+Skip to content
+UnBelievable-Keyboard
+Repository navigation
+Code
+Issues
+Actions
+Build Android APK
+Complete standalone music downloader #1
+Annotations
+1 error and 4 warnings
+Build Android APK
+failed 1 minute ago in 1m 17s
+2s
+1s
+2s
+24s
+42s
+##[debug]Evaluating condition for step: 'Setup Expo'
+##[debug]Evaluating: success()
+##[debug]Evaluating success:
+##[debug]=> true
+##[debug]Result: true
+##[debug]Starting: Setup Expo
+##[debug]Loading inputs
+##[debug]Evaluating: secrets.EXPO_TOKEN
+##[debug]Evaluating Index:
+##[debug]..Evaluating secrets:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'EXPO_TOKEN'
+##[debug]=> '***'
+##[debug]Result: '***'
+##[debug]Loading env
+Run expo/expo-github-action@v8
+::group::Installing expo-cli (6.3.10) from cache or with yarn
+Installing expo-cli (6.3.10) from cache or with yarn
+2s
+##[debug]Evaluating: secrets.EXPO_TOKEN
+##[debug]Evaluating Index:
+##[debug]..Evaluating secrets:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'EXPO_TOKEN'
+##[debug]=> '***'
+##[debug]Result: '***'
+##[debug]Evaluating: secrets.SPOTIFY_CLIENT_ID
+##[debug]Evaluating Index:
+##[debug]..Evaluating secrets:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'SPOTIFY_CLIENT_ID'
+##[debug]=> null
+##[debug]Result: null
+##[debug]Evaluating: secrets.SPOTIFY_CLIENT_SECRET
+##[debug]Evaluating Index:
+##[debug]..Evaluating secrets:
+##[debug]..=> Object
+##[debug]..Evaluating String:
+##[debug]..=> 'SPOTIFY_CLIENT_SECRET'
+##[debug]=> null
+##[debug]Result: null
+##[debug]Evaluating condition for step: 'Build Android APK (preview)'
+##[debug]Evaluating: success()
+##[debug]Evaluating success:
+##[debug]=> true
+##[debug]Result: true
+##[debug]Starting: Build Android APK (preview)
+##[debug]Loading inputs
+##[debug]Evaluating: format('eas build --platform android --profile {0} --non-interactive --local --output ./build/spotidown.apk', (github.event.inputs.profile || 'preview'))
+##[debug]Evaluating format:
+##[debug]..Evaluating String:
+##[debug]..=> 'eas build --platform android --profile {0} --non-interactive --local --output ./build/spotidown.apk'
+##[debug]..Evaluating Or:
+##[debug]....Evaluating Index:
+##[debug]......Evaluating Index:
+##[debug]........Evaluating Index:
+##[debug]..........Evaluating github:
+##[debug]..........=> Object
+##[debug]..........Evaluating String:
+##[debug]..........=> 'event'
+##[debug]........=> Object
+##[debug]........Evaluating String:
+##[debug]........=> 'inputs'
+##[debug]......=> null
+##[debug]....=> null
+##[debug]....Evaluating String:
+##[debug]....=> 'preview'
+##[debug]..=> 'preview'
+##[debug]=> 'eas build --platform android --profile preview --non-interactive --local --output ./build/spotidown.apk'
+##[debug]Result: 'eas build --platform android --profile preview --non-interactive --local --output ./build/spotidown.apk'
+##[debug]Loading env
+Run eas build --platform android --profile preview --non-interactive --local --output ./build/spotidown.apk
+##[debug]/usr/bin/bash -e /home/runner/work/_temp/ef22a202-73c1-4a48-a342-90112ba69475.sh
+EAS project not configured.
+Must configure EAS project by running 'eas init' before this command can be run in non-interactive mode.
+    Error: build command failed.
+Error: Process completed with exit code 1.
+##[debug]Finishing: Build Android APK (preview)
+0s
+0s
+0s
+0s
+0s

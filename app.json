@@ -19,6 +19,11 @@
     },
     "android": {
       "package": "com.kumarshakti.spotidown",
+      "extra": {
+        "eas": {
+          "projectId": "14f6864d-5645-424a-9e7c-88096c148881"
+        }
+      },
       "adaptiveIcon": {
         "backgroundColor": "#0A0A0A",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
